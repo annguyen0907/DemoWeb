@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>thesweetpeabakery.co.uk_Clone</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="../../lib/css/bootstrap.min.css">
+<script src="../../lib/Jquery/jquery-3.3.1.min.js"></script>
+<script src="../../lib/js/bootstrap.min.js"></script>
+<style>
+	* {
+		margin:0 auto;
+	}
+	body {
+		background:#9DEFC2;
+	}
+	.navbar-nav {
+		padding-top:10px;
+	}
+	nav ul li {
+		font-weight:bold;
+		font-family:Arial;
+		font-size:22px;		
+	}
+	nav ul li a {
+		color:black;
+	}
+	a {
+		text-decoration:none;
+		color:red;
+	}
+	#call {
+		font-size:22px;
+		float:right;
+		padding-right:180px;
+		padding-top:20px;
+		font-weight:bold;
+		font-family:Arial;
+	}
+	#nv {
+		float:left;	
+	}
+	h1 {
+		text-align:center;
+	}
+	#pic1, #pic3 {
+		float:left;
+		padding:5px;
+	}
+	#pic2 {
+		float:right;
+		padding:5px;
+	}
+	#p1,#p2,#p3 {
+		padding-top:10px;
+		clear:both;
+	}
+	#p1 p,#p2 p,#p3 p {
+		margin-top:15px;
+		padding:15px;
+		font-family:Arial;
+		font-size:20px;
+	}
+</style>
+
+</head>
+
+<body class="container-fluid">
+	<div class="container-fluid">
+    	<nav class="navbar navbar-fixed-top">
+            <div id="nv" class="container-fluid">
+            	<div class="navbar-header"><a href="#"><img src="../images/imgnav.png" width="100" height="50" alt=""/></a></div>
+                <ul class="nav navbar-nav">
+            		<li><a href="#">Home</a></li>
+                	<li><a href="#">Our Product</a></li>
+                	<li><a href="#">Gallery</a></li>
+                	<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">More <span class="caret"></span></a>  
+                    	<ul class="dropdown-menu">
+                        	<li><a data-toggle="modal" data-target="#showmodal" href="#">Contact us</a></li>
+                       	  	<li><a href="#">Privacy Notice</a></li>
+                            <li><a href="#">Subcribe</a></li>
+                      	</ul>
+                    </li>
+            	</ul>	
+            </div> 
+            <div id="call">Call us on <a href="#">07500 237280</a> </div>  
+        </nav>  
+    </div> 
+    <div class="container-fluid">
+    	<img src="../images/background.jpg" width="100%" height="300px" alt=""/>
+    </div>  
+    <div class="container-fluid">
+    	<h1>ABOUT US</h1>
+        <hr>
+        <div id="p1">
+        <img id="pic1" src="../images/coffee.jpg" width="285" height="180" alt=""/>
+        <p>Although I've been told many times that Trdelniks are not Czech, they are still everywhere in Prague.  Also, they're really tasty.  Thus, we decided to go on a hunt for the best ones in Prague.  Our search ended here.
+
+The trdelniks here are taller, tastier, and more extravagant than anywhere else in Prague.  Although they are also slightly more expensive, it's worth ever koruna.  If you're a tourist in Prague you'll definitely be in area, so stop by here for an amazing dessert.</p>
+        </div>
+        <div id="p2">
+        <img id="pic2" src="../images/donut.jpg" width="285" height="180" alt=""/>
+        <p>Doughnut (hay gọi là donut trong tiếng Mỹ) là một loại bánh ngọt rán hoặc nướng để ăn tráng miệng hoặc ăn vặt. Đây là loại bánh rất nổi tiếng và phổ biến ở nhiều đất nước phương Tây, có thể được mua trong cửa hàng hoặc tự làm ở nhà. Thường bánh có dạng hình vòng, nhưng cũng có thể có hình tròn nhỏ nhồi nhân bên trong. Bánh thường được phủ nhiều loại kem, socola và hạt đường trang trí</p> 
+        </div>
+        <div id="p3">
+        <img id="pic3" src="../images/wasabi.jpg" width="285" height="180" alt=""/>
+        <p>The QSR sector is very crowded at the moment but we believe that British customers love to try anything different so long as it’s tasty and exciting and that’s exactly what we have with Soboro. Soboro is going to be a place where people are going to want to meet friends, relax with a coffee or just grab something wonderful to take away. It’s not like anything else on the high street right now</p></div>
+    </div>
+    <!---OPen modal-->
+    <div class="modal" id="showmodal">
+    	<div class="modal-dialog">
+        	<div class="modal-content">
+            	<div class="modal-header">
+                	<h4 class="modal-title">Enter information...</h4>
+                    <button type="button" class="close" data-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                	<form class="form-horizontal">
+                    	<div class="form-group">
+                        	<label for="email">Email Address:</label>
+                            <input type="email" class="form-control" id="txtmail"> 
+                        </div>
+                        <div class="form-group">
+                        	<label for="tel">Tel:</label>
+                            <input type="tel" class="form-control" id="txttel"> 
+                        </div>
+                        <div class="form-group">
+                        	<label for="name">Name:</label>
+                            <input type="text" class="form-control" id="txtname"> 
+                        </div>
+                        <div class="form-group">
+                        	<label for="send">Input String:</label><br>
+                            <textarea style="width:500px; height:150px"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                	<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>	
+        </div>
+    </div>
+</body>
+</html>
